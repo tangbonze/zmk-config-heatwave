@@ -1,0 +1,22 @@
+#include "heatwave.dtsi"
+
+&kscan0 {
+	col-gpios
+	= <&gpio1 15 (GPIO_ACTIVE_HIGH)> // col 1
+	, <&gpio1 7 (GPIO_ACTIVE_HIGH)> // col 2
+	, <&gpio1 14 (GPIO_ACTIVE_HIGH)> // col 3
+	, <&gpio1 5 (GPIO_ACTIVE_HIGH)> // col 4
+	, <&gpio1 13 (GPIO_ACTIVE_HIGH)> // col 5
+	, <&gpio1 3 (GPIO_ACTIVE_HIGH)> // col 6
+	, <&gpio1 12 (GPIO_ACTIVE_HIGH)> // col 7
+	, <&gpio0 5 (GPIO_ACTIVE_HIGH)> // col 8
+	, <&gpio0 04 (GPIO_ACTIVE_HIGH)> // col 9
+	, <&gpio1 11 (GPIO_ACTIVE_HIGH)> // col 10
+	;
+    row-gpios
+	= <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 1
+	, <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 2
+	, <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 3
+	, <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 4
+    ;
+};

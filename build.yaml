@@ -1,10 +1,6 @@
 include:
-  - board: nice_nano_v2
-    shield: heatwave_dongle
   - board: seeeduino_xiao_ble
-    shield: heatwave_main
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: nice_nano_v2
-    shield: settings_reset
+    shield: heatwave
+    snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: settings_reset

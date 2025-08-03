@@ -39,13 +39,6 @@
 
 /* Behavior settings */
 
-&mmv_input_listener {
-    speed {
-        layers = <NAV>;
-        input-processors = <&zip_xy_scaler 3 1>;
-    };
-};
-
 &soft_off { hold-time-ms = <10>; };
 
 &caps_word { continue-list = <UNDER MINUS>; };

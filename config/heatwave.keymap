@@ -201,7 +201,6 @@
         COMBO(printscreen, &kp PSCRN, 9 19, BASE, 15)
         COMBO(wm, &wm 0 LGUI, 31 32, BASE, 25)
 
-        COMBO(mouse, &tog MOUSE, 13 14, BASE MOUSE, 30)
         COMBO(game, &tog GAME, 1 2 3, BASE GAME, 25)
 
         // COMBO(usbbt, &out OUT_TOG, 0 10, BASE)

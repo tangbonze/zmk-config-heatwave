@@ -2,8 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <input/processors.dtsi> // for scaling mouse emulation
-#include "./boards/shields/heatwave/mouse.dtsi"
 
 /* Layers (Must be all caps. Layers can only access other layers that appear later in the stack, ie layer 7 cannot access layer 0. */
 
@@ -14,7 +12,6 @@
 # define SYM    4
 # define NUM    5
 # define FN     6
-# define MOUSE  7
 
 /* Abstractions */
 // tapping-term-ms = time before hold is triggered on same side
@@ -277,13 +274,5 @@
             >;
         };
 
-        mouse {
-            bindings = <
-&tog MOUSE  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE
-&mo 3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE
-&tog MOUSE  &tog MOUSE      &mkp MCLK       &mkp MCLK        &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE  &tog MOUSE
-                            &tog MOUSE      &mkp LCLK        &mkp RCLK   &tog MOUSE  &mkp LCLK   &tog MOUSE
-            >;
-        };
     };
 };
